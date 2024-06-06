@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { East_Sea_Dokdo, Nanum_Gothic, Nanum_Myeongjo } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const sans_serif = Nanum_Gothic({
   weight: ["400", "700", "800"],
@@ -30,10 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={serif.className}>
-        <header></header>
+      <body
+        className={`flex min-h-screen w-full flex-col items-center justify-between ${serif.className}`}
+      >
+        <Header />
         {children}
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   );

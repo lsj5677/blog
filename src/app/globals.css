@@ -11,7 +11,7 @@
   --color-sub: "#DBCFBD";
   --color-third: "#BFC2BE";
   --color-point: "#B5371F";
-  --color-white: "#E2DFD6";
+  --color-white: "#ffffff";
   --color-black: "#221B12";
 }
 
@@ -21,7 +21,7 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
     /* colors */
-    --color-black: "#E2DFD6";
+    --color-black: "#ffffff";
     --color-white: "#221B12";
   }
 }
