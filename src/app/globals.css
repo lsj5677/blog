@@ -6,6 +6,13 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /* colors */
+  --color-main: "#E2DFD6";
+  --color-sub: "#DBCFBD";
+  --color-third: "#BFC2BE";
+  --color-point: "#B5371F";
+  --color-white: "#E2DFD6";
+  --color-black: "#221B12";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,17 +20,15 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    /* colors */
+    --color-black: "#E2DFD6";
+    --color-white: "#221B12";
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--color-black);
+  background: var(--color-white);
 }
 
 @layer utilities {
