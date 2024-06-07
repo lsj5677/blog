@@ -8,7 +8,7 @@ export default function Header() {
       </h1>
       <nav className="flex gap-5">
         <Link href="/">Home</Link>
-        <Link href="/blogs">Blogs</Link>
+        <Link href="/works">Works</Link>
         <Link href="/contact">Contact</Link>
       </nav>
     </header>
