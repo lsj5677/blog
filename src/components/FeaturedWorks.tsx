@@ -1,5 +1,4 @@
-import { PostProps, getFeaturedPosts } from "@/service/posts";
-import Card from "./Card";
+import { getFeaturedPosts } from "@/service/posts";
 import { point, sans_serif } from "@/app/layout";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
@@ -9,7 +8,7 @@ export default async function FeaturedWorks() {
   const posts = await getFeaturedPosts();
   return (
     <div className="bg-third px-5 py-20 text-center">
-      <div className="sub-wrap">
+      <div className={`sub-wrap ${sans_serif.className}`}>
         <h3 className={`mb-8 text-center text-3xl ${point.className}`}>
           Works
         </h3>
