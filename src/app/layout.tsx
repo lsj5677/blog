@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`flex min-h-screen w-full flex-col items-center justify-between ${serif.className}`}
       >
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
