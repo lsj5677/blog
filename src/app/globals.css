@@ -32,6 +32,11 @@ body {
   background: var(--color-white);
 }
 
+.sub-wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
