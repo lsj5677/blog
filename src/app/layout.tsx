@@ -33,10 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`flex min-h-screen w-full flex-col items-center justify-between ${serif.className}`}
+        className={`flex min-h-screen w-full flex-col items-center justify-between bg-main text-black ${serif.className}`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="w-full max-w-screen-xl flex-auto">{children}</main>
         <Footer />
       </body>
     </html>
