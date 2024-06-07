@@ -1,5 +1,6 @@
-import { getFeaturedPosts } from "@/service/posts";
+import { PostProps, getFeaturedPosts } from "@/service/posts";
 import Card from "./Card";
+import { sans_serif } from "@/app/layout";
 
 export default async function FeaturedWorks() {
   const posts = await getFeaturedPosts();
@@ -8,7 +9,13 @@ export default async function FeaturedWorks() {
       <div className="sub-wrap">
         <h3 className="mb-8 text-center text-3xl">Works</h3>
         <ul className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-5">
-          <Card posts={posts} />
+          {posts.map((post: PostProps) => (
+            <li
+              className={`rounded-2xl bg-white shadow-lg ${sans_serif.className}`}
+            >
+              <Card post={post} />
+            </li>
+          ))}
         </ul>
       </div>
     </div>

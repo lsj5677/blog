@@ -1,34 +1,33 @@
-import { sans_serif } from "@/app/layout";
 import { PostProps } from "@/service/posts";
 import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
-  posts: PostProps[];
+  post: PostProps;
 };
-export default function Card({ posts }: Props) {
-  console.log("posts", posts);
+export default function Card({
+  post: { title, path, description, date },
+}: Props) {
   return (
-    <>
-      {posts.map(({ title, description, path }: PostProps) => (
-        <li
-          className={`rounded-2xl bg-white shadow-lg ${sans_serif.className}`}
-        >
-          <Link href={`/${path}`} key={path}>
-            <Image
-              src={`/images/posts/${path}.png`}
-              alt={title}
-              width={300}
-              height={300}
-              className="w-full rounded-t-2xl"
-            />
-            <div className="p-4">
-              <h3 className="font-bold">{title}</h3>
-              <p className="text-xs text-slate-400">{description}</p>
-            </div>
-          </Link>
-        </li>
-      ))}
-    </>
+    <Link href={`/works/${path}`} key={path}>
+      <article className="overflow-hidden">
+        <Image
+          src={`/images/posts/${path}.png`}
+          alt={title}
+          width={300}
+          height={300}
+          className="w-full rounded-t-2xl"
+        />
+        <div className="p-4 text-center">
+          <time className="block text-right text-[0.7em] text-slate-400">
+            {date.toString()}
+          </time>
+          <h3 className="mt-2 font-bold">{title}</h3>
+          <p className="w-full truncate text-xs text-slate-500">
+            {description}
+          </p>
+        </div>
+      </article>
+    </Link>
   );
 }
