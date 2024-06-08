@@ -4,8 +4,8 @@ import { IoIosMail } from "react-icons/io";
 
 export default function Main() {
   return (
-    <div className="bg-main">
-      <div className="sub-wrap relative flex h-dvh flex-col gap-8 px-5 pb-20 md:h-2/3 md:min-h-[700px] md:flex-row">
+    <div className="flex h-[calc(100vh-69px)] flex-col items-center justify-center bg-main">
+      <div className="sub-wrap relative flex h-dvh flex-col gap-8 px-5 pb-20 pt-16 md:h-2/3 md:min-h-[700px] md:flex-row">
         <span
           className={`${point.className} absolute left-1/2 top-1/2 hidden w-full max-w-5xl -translate-x-1/2 -translate-y-1/2 text-center text-7xl italic text-blue md:block`}
         >

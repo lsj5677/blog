@@ -1,5 +1,6 @@
 import { point } from "@/app/layout";
 import Link from "next/link";
+import Nav from "./Nav";
 
 export default function Header() {
   return (
@@ -10,11 +11,7 @@ export default function Header() {
             {"SuJIN's"}
           </Link>
         </h1>
-        <nav className="flex gap-5">
-          <Link href="/">Home</Link>
-          <Link href="/works">Works</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
+        <Nav />
       </div>
     </header>
   );
