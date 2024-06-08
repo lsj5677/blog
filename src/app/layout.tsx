@@ -38,7 +38,7 @@ export default function RootLayout({
         className={`flex min-h-screen w-full flex-col items-center justify-between bg-main text-black ${serif.className}`}
       >
         <Header />
-        <main className="w-full flex-auto pt-32">{children}</main>
+        <main className="w-full flex-auto pt-[69px]">{children}</main>
         <Footer />
       </body>
     </html>
