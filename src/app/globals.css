@@ -35,6 +35,7 @@ body {
 .sub-wrap {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 @layer utilities {

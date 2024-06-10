@@ -7,7 +7,7 @@ import CardsGrid from "./CardsGrid";
 export default async function FeaturedWorks() {
   const posts = await getFeaturedPosts();
   return (
-    <div className="bg-sub px-5 py-20 text-center tracking-tighter">
+    <div className="bg-sub py-20 text-center tracking-tighter">
       <div className={`sub-wrap`}>
         <div className="mb-8 flex flex-col items-center justify-between gap-10 md:flex-row">
           <h3

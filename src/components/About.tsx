@@ -2,7 +2,7 @@ import { point } from "@/app/layout";
 
 export default function About() {
   return (
-    <div className="bg-third px-5 py-20">
+    <div className="bg-third py-20">
       <div className="sub-wrap flex flex-col items-center justify-between gap-10 md:flex-row">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium

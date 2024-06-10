@@ -18,7 +18,7 @@ export default async function WorkSlugPage({ params: { slug } }: Props) {
   const post = await getPost(slug);
   const { next, prev } = post;
   return (
-    <article className={`my-10 px-5 ${sans_serif.className}`}>
+    <article className={`my-10 ${sans_serif.className}`}>
       <div className="sub-wrap">
         <WorkContent post={post} />
         <section>

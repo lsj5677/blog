@@ -4,7 +4,7 @@ import Nav from "./Nav";
 
 export default function Header() {
   return (
-    <header className="fixed z-10 box-border w-full bg-main p-5">
+    <header className="fixed z-10 box-border w-full bg-main py-5">
       <div className="sub-wrap flex items-center justify-between">
         <h1>
           <Link href="/" className={`${point.className} text-xl`}>
