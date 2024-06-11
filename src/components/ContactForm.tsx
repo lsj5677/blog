@@ -62,7 +62,6 @@ export default function ContactForm() {
           </label>
           <input
             required
-            autoFocus
             id="from"
             type="email"
             name="from"
