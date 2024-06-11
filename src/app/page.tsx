@@ -1,5 +1,5 @@
 import About from "@/components/About";
-import ContactForm from "@/components/ContactForm";
+import ContactSection from "@/components/ContactSection";
 import FeaturedWorks from "@/components/FeaturedWorks";
 import Main from "@/components/Main";
 
@@ -9,7 +9,7 @@ export default function Home() {
       <Main />
       <About />
       <FeaturedWorks />
-      <ContactForm />
+      <ContactSection />
     </section>
   );
 }

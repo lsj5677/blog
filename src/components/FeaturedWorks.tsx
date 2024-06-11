@@ -11,7 +11,7 @@ export default async function FeaturedWorks() {
       <div className={`sub-wrap`}>
         <div className="mb-8 flex flex-col items-center justify-between gap-10 md:flex-row">
           <h3
-            className={`shrink-0 text-left text-5xl tracking-tighter text-red ${serif.className}`}
+            className={`text-brown shrink-0 text-left text-5xl tracking-tighter ${serif.className}`}
           >
             My <span className="italic">Works</span>
           </h3>
@@ -24,7 +24,7 @@ export default async function FeaturedWorks() {
         <CardsGrid posts={posts} />
         <Link
           href="/works"
-          className={`mt-8 inline-block bg-red px-4 py-3 text-main shadow-md transition-all hover:bg-sky-950 hover:transition-all md:mt-10`}
+          className={`bg-brown mt-8 inline-block px-4 py-3 text-main shadow-md transition-all hover:bg-sky-950 hover:transition-all md:mt-10`}
         >
           <div className="flex items-center justify-center gap-2">
             View More Works <FaArrowRight />

@@ -16,6 +16,7 @@ const config: Config = {
         white: "#ffffff",
         black: "#221B12",
         blue: "#223FB5",
+        brown: "#7C7764",
       },
     },
   },

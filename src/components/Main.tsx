@@ -1,4 +1,5 @@
 import { point } from "@/app/layout";
+import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
@@ -30,9 +31,9 @@ export default function Main() {
         <div className="flex w-full flex-col md:w-1/3">
           <p className="hidden flex-auto bg-white md:block">image</p>
           <div className="my-5 flex items-center justify-end gap-4 text-2xl text-blue">
-            <button className="text-3xl">
+            <Link href="#contact" className="text-3xl">
               <IoIosMail />
-            </button>
+            </Link>
             <a href="">
               <FaGithub />
             </a>
