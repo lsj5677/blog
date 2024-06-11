@@ -1,4 +1,4 @@
-import { point } from "@/app/layout";
+import { rock_salt } from "@/app/font";
 import ContactForm from "./ContactForm";
 
 export default function ContactSection() {
@@ -9,7 +9,9 @@ export default function ContactSection() {
           image
         </p>
         <div>
-          <h2 className={`text-center text-5xl opacity-40 ${point.className}`}>
+          <h2
+            className={`text-center text-5xl opacity-40 ${rock_salt.className}`}
+          >
             Make suggestions
           </h2>
           <p className="mt-10 text-center text-sm">

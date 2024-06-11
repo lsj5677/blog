@@ -1,4 +1,4 @@
-import { point } from "@/app/layout";
+import { rock_salt } from "@/app/font";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
@@ -8,7 +8,7 @@ export default function Main() {
     <div className="flex h-[calc(100vh-69px)] flex-col items-center justify-center bg-main">
       <div className="sub-wrap relative flex h-dvh flex-col gap-8 pb-20 pt-16 md:h-2/3 md:min-h-[700px] md:flex-row">
         <span
-          className={`${point.className} absolute left-1/2 top-1/2 hidden w-full max-w-5xl -translate-x-1/2 -translate-y-1/2 text-center text-7xl italic text-blue md:block`}
+          className={`${rock_salt.className} absolute left-1/2 top-1/2 hidden w-full max-w-5xl -translate-x-1/2 -translate-y-1/2 text-center text-7xl italic text-blue md:block`}
         >
           Lorem ipsum dolor
           <br /> held in slavery

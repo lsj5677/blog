@@ -1,16 +1,28 @@
-import { sans_serif } from "@/app/layout";
+import { nanum_gothic } from "@/app/font";
 import AdjacentSection from "@/components/AdjacentSection";
 import Backbutton from "@/components/Backbutton";
 import WorkContent from "@/components/WorkContent";
-import { getPost } from "@/service/posts";
+import { getFeaturedPosts, getPost } from "@/service/posts";
+import { Metadata } from "next";
 
 type Props = {
   params: { slug: string };
 };
 
-export function generateMetadata({ params }: Props) {
+// export function generateMetadata({ params }: Props) {
+//   return {
+//     title: `Works | ${params.slug}`,
+//     description: params.slug,
+//   };
+// }
+
+export async function generateMetadata({
+  params: { slug },
+}: Props): Promise<Metadata> {
+  const { title, description } = await getPost(slug);
   return {
-    title: `Works | ${params.slug}`,
+    title: `Works | ${slug}`,
+    description,
   };
 }
 
@@ -18,7 +30,7 @@ export default async function WorkSlugPage({ params: { slug } }: Props) {
   const post = await getPost(slug);
   const { next, prev } = post;
   return (
-    <article className={`my-10 ${sans_serif.className}`}>
+    <article className={`my-10 ${nanum_gothic.className}`}>
       <div className="sub-wrap">
         <WorkContent post={post} />
         <section>
@@ -31,4 +43,11 @@ export default async function WorkSlugPage({ params: { slug } }: Props) {
       </div>
     </article>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getFeaturedPosts();
+  return posts.map((post) => ({
+    slug: post.path,
+  }));
 }

@@ -1,8 +1,8 @@
 import { getFeaturedPosts } from "@/service/posts";
-import { point, sans_serif, serif } from "@/app/layout";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import CardsGrid from "./CardsGrid";
+import { nanum_myeongjo } from "@/app/font";
 
 export default async function FeaturedWorks() {
   const posts = await getFeaturedPosts();
@@ -11,7 +11,7 @@ export default async function FeaturedWorks() {
       <div className={`sub-wrap`}>
         <div className="mb-8 flex flex-col items-center justify-between gap-10 md:flex-row">
           <h3
-            className={`text-brown shrink-0 text-left text-5xl tracking-tighter ${serif.className}`}
+            className={`text-brown shrink-0 text-left text-5xl tracking-tighter ${nanum_myeongjo.className}`}
           >
             My <span className="italic">Works</span>
           </h3>

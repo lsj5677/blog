@@ -1,4 +1,4 @@
-import { point } from "@/app/layout";
+import { rock_salt } from "@/app/font";
 
 export default function About() {
   return (
@@ -9,7 +9,7 @@ export default function About() {
           maiores nulla porro sapiente! Maiores tenetur ducimus, velit nesciunt
           iure obcaecati!
         </p>
-        <h2 className={`text-center text-5xl ${point.className}`}>About</h2>
+        <h2 className={`text-center text-5xl ${rock_salt.className}`}>About</h2>
         <p className="text-right">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
           maiores nulla porro sapiente! Maiores tenetur ducimus, velit nesciunt
